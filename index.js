@@ -24,6 +24,14 @@ t1.from("#first-div",{
    duration:2,
    delay:1,
 })
+t1.from("#dateInput",{
+   opacity: 0,
+   duration:2,
+})
+t1.from("#calBtn",{
+   opacity: 0,
+   duration:2,
+})
 t1.from("#yearBtn",{
    x:-750,
    duration:2,
