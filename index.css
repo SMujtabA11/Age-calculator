@@ -36,3 +36,25 @@ body{
   font-weight: bolder;
   font-style: italic;
 }
+
+  
+#outputBtns{
+  width:320px;
+  height:150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+#yearBtn,#monthBtn,#daysBtn{
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+#yearBtn,#monthBtn{
+  margin-right:20px;
+}
+
