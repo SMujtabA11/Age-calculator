@@ -21,6 +21,7 @@ gsap.set("body", { overflow: "hidden" });
  var t1 = gsap.timeline();
 t1.from("#first-div",{
    x:-750,
+   opacity: 0,
    duration:2,
    delay:1,
 })
