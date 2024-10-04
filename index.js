@@ -1,38 +1,19 @@
 var todayDate= document.getElementById("dateInput");
 var calBtn= document.getElementById("calBtn")
 var birthdayDate = new Date("August 16, 1998");
-var mm = birthdayDate.getMonth();
-alert(mm);
+var yearBtn = document.getElementById("yearBtn");
+var monthBtn = document.getElementById("monthBtn");
+var daysBtn = document.getElementById("daysBtn");
 calBtn.addEventListener("click", function(){
-    var val = todayDate.value;
-  var totalAge = birthdayDate + val;
-//    var Age = totalAge / (1000*60*60*24);
-
-  console.log(totalAge);
-
+   var val = new Date(todayDate.value);
+   var yearsDifference = val.getFullYear() - birthdayDate.getFullYear();
+   var monthsDifference = val.getMonth() - birthdayDate.getMonth(); 
+   var totalMonths = yearsDifference*12 +monthsDifference ;
+   var totalDays = Math.floor((val - birthdayDate) / (1000 * 60 * 60 * 24));
+   yearBtn.innerText = (`${yearsDifference}\n\nYears`);
+   monthBtn.innerText = (`${totalMonths}\n\nYears`);
+   daysBtn.innerText = (`${totalDays}\n\nYears`);
+   yearBtn.style.height = "100px";
+   monthBtn.style.height = "100px";
+   daysBtn.style.height = "100px";
 });
-
-
-
-// var outputBtnsDiv= document.getElementById("outputBtns")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// calBtn.addEventListener("click", function(){
-//     console.log(birthday);
-// });
