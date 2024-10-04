@@ -11,3 +11,28 @@ body{
   justify-content: center;
   align-items: center;
 }
+#first-div{
+  width:320px;
+  height:150px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+#dateInput{
+  height:30px;
+  width:170px;
+  font-weight: bolder;
+  font-size: x-large;
+  padding: 5px;
+  margin: 10px;
+}
+#calBtn{
+  border-radius: 5px;
+  height: 40px;
+  width: 100px;
+  padding: 2px;
+  font-weight: bolder;
+  font-style: italic;
+}
