@@ -17,3 +17,23 @@ calBtn.addEventListener("click", function(){
    monthBtn.style.height = "100px";
    daysBtn.style.height = "100px";
 });
+gsap.set("body", { overflow: "hidden" });
+ var t1 = gsap.timeline();
+t1.from("#first-div",{
+   x:-750,
+   duration:2,
+   delay:1,
+})
+t1.from("#yearBtn",{
+   x:-750,
+   duration:2,
+})
+t1.from("#monthBtn",{
+   y:-750,
+   duration:2,
+})
+t1.from("#daysBtn",{
+   y:750,
+   duration:2,
+   overflow: "hidden" 
+})
