@@ -13,6 +13,19 @@ calBtn.addEventListener("click", function(){
    yearBtn.innerText = (`${yearsDifference}\n\nYears`);
    monthBtn.innerText = (`${totalMonths}\n\nYears`);
    daysBtn.innerText = (`${totalDays}\n\nYears`);
+   t1 =gsap.timeline();
+   t1.from("#yearBtn",{
+      opacity: 0,
+      duration:2,
+   })
+   t1.from("#monthBtn",{
+      opacity: 0,
+      duration:2,
+   })
+   t1.from("#daysBtn",{
+      opacity: 0,
+      duration:7,
+   })
    yearBtn.style.height = "100px";
    monthBtn.style.height = "100px";
    daysBtn.style.height = "100px";
